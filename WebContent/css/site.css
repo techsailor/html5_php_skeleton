@@ -10,6 +10,34 @@ body {
 	font-family:arial,sans-serif;
 	font-size:14px;
 	}
-img{
+.floatleft{
 	float:left;
+}
+.floatright{
+	float:right;
+}
+.clearleft {
+	clear:left;
+}
+.clearright {
+	clear:right;
+}
+.clearboth {
+	clear:both;
+}
+.panel {
+	opacity:0;
+	-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition: opacity .6s ease-in-out;
+	-o-transition: opacity .6s ease-in-out;
+	-ms-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;
+}
+.panel:target{
+	opacity: 1;
+	display:block;
+	margin-top: 0%;
+}
+#website_setup:target ~ #header #navigation #link-home {
+	color:#000000;
 }
