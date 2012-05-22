@@ -8,7 +8,7 @@ body {
 	padding:0; 
 /*	overflow:hidden;*/ 
 	font-family:arial,sans-serif;
-	font-size:14px;
+	font-size:16px;
 	}
 .floatleft{
 	float:left;
@@ -32,12 +32,17 @@ body {
 	-o-transition: opacity .6s ease-in-out;
 	-ms-transition: opacity .6s ease-in-out;
 	transition: opacity .6s ease-in-out;
+	position:absolute;
+	margin-top:80px;
 }
 .panel:target{
 	opacity: 1;
 	display:block;
-	margin-top: 0%;
 }
 #website_setup:target ~ #header #navigation #link-home {
 	color:#000000;
+}
+section {
+	margin-top:000px;
+	margin-left: 40px; width:800px;
 }
