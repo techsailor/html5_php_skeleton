@@ -1,19 +1,51 @@
 @CHARSET "UTF-8";
 body {
-	background-color:#030303; 
+	background-color:#ffffff; 
 	color:#fdffc1;
+/*
 	background-image:url('../images/backgroundGradient.png');
 	background-repeat:repeat-y; 
+*/
 	margin:0; 
 	padding:0; 
 /*	overflow:hidden;*/ 
 	font-family:arial,sans-serif;
-	font-size:16px;
+	font-size:14px;
+	background-image: linear-gradient(right , rgb(5,51,92) 100%, rgb(17,46,46) 68%, rgb(3,3,3) 13%);
+	background-image: -o-linear-gradient(right , rgb(5,51,92) 100%, rgb(17,46,46) 68%, rgb(3,3,3) 13%);
+	background-image: -moz-linear-gradient(right , rgb(5,51,92) 100%, rgb(17,46,46) 68%, rgb(3,3,3) 13%);
+	background-image: -webkit-linear-gradient(right , rgb(5,51,92) 100%, rgb(17,46,46) 68%, rgb(3,3,3) 13%);
+	background-image: -ms-linear-gradient(right , rgb(5,51,92) 100%, rgb(17,46,46) 68%, rgb(3,3,3) 13%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left bottom,
+		color-stop(1, rgb(5,51,92)),
+		color-stop(0.68, rgb(17,46,46)),
+		color-stop(0.13, rgb(3,3,3))
+	);
 	}
 	section {
-	width:980px;
-	margin-left: 40px;
+	margin-top:140px;
+	margin-left: 40px; width:780px;
 	}
+	a {
+	text-decoration:none;
+	color:#9d9f61;
+	}
+nav ul {
+	list-style:square ;
+	font-size:120%;
+}
+nav ul a {
+	text-decoration:none;
+	color:#9d9f61;
+}
+nav ul a:hover {
+	text-decoration:none;
+	color:#bdbfa1;
+}
 .floatleft{
 	float:left;
 }
@@ -37,7 +69,7 @@ body {
 	-ms-transition: opacity .6s ease-in-out;
 	transition: opacity .6s ease-in-out;
 	position:absolute;
-	margin-top:50px;
+	margin-top:90px;
 }
 .panel:target{
 	opacity: 1;
@@ -45,8 +77,4 @@ body {
 }
 #website_setup:target ~ #header #navigation #link-home {
 	color:#000000;
-}
-section {
-	margin-top:000px;
-	margin-left: 40px; width:800px;
 }
